@@ -2,11 +2,12 @@
 #include<conio.h>
 void main()
 {
-int a[10],i,j,n,b[10];
+int i,j,n;
+char a[10],b[10],c[10];
 clrscr();
 scanf("%d",&n);
 for(i=0;i<n;i++)
-scanf("%d",&a[i]);
+scanf("%c",&a[i]);
 for(i=0;i<n;i+2)
 {
 for(j=0;j<n;j++)
@@ -23,7 +24,7 @@ c[j]=a[i];
 }
 for(i=0;i<n;i++)
 {
-printf("%d%d",b[i],c[i]);
+printf("%c%c",b[i],c[i]);
 }
 getch();
 }
